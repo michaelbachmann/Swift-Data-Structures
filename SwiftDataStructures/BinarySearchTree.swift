@@ -34,7 +34,15 @@ class BinarySearchTree<T: Comparable>{
     if key == root?.key {
       return root
     }
-    
+    if key < (root?.key)! {
+      if let left = root?.left {
+        insert(key: key, root: left)
+      }
+    } else if key > (root?.key)! {
+      if let right = root?.right {
+          insert(key: key, root: right)
+      }
+    }
     return nil
   }
   
