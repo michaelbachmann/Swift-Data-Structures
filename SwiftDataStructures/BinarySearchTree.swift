@@ -27,7 +27,7 @@ class BinarySearchTree<T: Comparable>{
     if _numNodes == 0 {
       return nil
     }
-    return nil
+    return findHelper(key: key, root: _root)
   }
   
   func findHelper(key: T, root: BSTNode<T>?) -> BSTNode<T>? {
@@ -79,12 +79,14 @@ class BinarySearchTree<T: Comparable>{
   }
   
   private func printHelper(root: BSTNode<T>?) {
-    if let left = root?.left {
-      printHelper(root: left)
-    }
-    print("\(root?.key) ")
-    if let right = root?.right {
-      printHelper(root: right)
+    if (root != nil) {
+      print("[", terminator: "")
+      printHelper(root: root?.left)
+      print(" ( \((root?.key)!) ) ", terminator: "")
+      printHelper(root: root?.right)
+      print("]", terminator: "")
     }
   }
+  
+  
 }

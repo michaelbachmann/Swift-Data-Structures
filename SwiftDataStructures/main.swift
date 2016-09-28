@@ -10,3 +10,13 @@ import Foundation
 
 print("Hello, World!")
 
+var bst = BinarySearchTree<Int>()
+var injectArray = [5, 6, 7, 4, 1, 10]
+
+
+for num in injectArray {
+  bst.insert(key: num)
+}
+
+bst.printTree()
+
