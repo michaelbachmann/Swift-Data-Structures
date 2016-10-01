@@ -18,3 +18,6 @@ To be done.
 
 ### Stack / Queue
 To be done.
+
+### D-Ary Heap
+To be done
