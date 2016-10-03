@@ -19,4 +19,3 @@ for num in injectArray {
 }
 
 bst.printTree()
-
