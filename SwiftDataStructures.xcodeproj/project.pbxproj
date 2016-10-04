@@ -11,6 +11,7 @@
 		4C7207DB1D9787C700E1B8A7 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 4C7207DA1D9787C700E1B8A7 /* README.md */; };
 		4C7207E31D97898200E1B8A7 /* SwiftDataStructuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7207E21D97898200E1B8A7 /* SwiftDataStructuresTests.swift */; };
 		4C7207EC1D978B5800E1B8A7 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7207EB1D978B5800E1B8A7 /* BinarySearchTree.swift */; };
+		4C8B1A951DA41B59004B62D5 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8B1A941DA41B59004B62D5 /* Stack.swift */; };
 		4C9362A41DA3335A00C45A98 /* Algorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9362A31DA3335A00C45A98 /* Algorithms.swift */; };
 		4CEACC531DA20999002D24A3 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEACC521DA20999002D24A3 /* Graph.swift */; };
 		4CEACC551DA20DCE002D24A3 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEACC541DA20DCE002D24A3 /* Queue.swift */; };
@@ -36,6 +37,7 @@
 		4C7207E21D97898200E1B8A7 /* SwiftDataStructuresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataStructuresTests.swift; sourceTree = "<group>"; };
 		4C7207E41D97898200E1B8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C7207EB1D978B5800E1B8A7 /* BinarySearchTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
+		4C8B1A941DA41B59004B62D5 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		4C9362A31DA3335A00C45A98 /* Algorithms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Algorithms.swift; sourceTree = "<group>"; };
 		4CEACC521DA20999002D24A3 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		4CEACC541DA20DCE002D24A3 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				4CEACC521DA20999002D24A3 /* Graph.swift */,
 				4CEACC541DA20DCE002D24A3 /* Queue.swift */,
 				4C9362A31DA3335A00C45A98 /* Algorithms.swift */,
+				4C8B1A941DA41B59004B62D5 /* Stack.swift */,
 			);
 			path = SwiftDataStructures;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			files = (
 				4CEACC551DA20DCE002D24A3 /* Queue.swift in Sources */,
 				4CEACC531DA20999002D24A3 /* Graph.swift in Sources */,
+				4C8B1A951DA41B59004B62D5 /* Stack.swift in Sources */,
 				4C7207DB1D9787C700E1B8A7 /* README.md in Sources */,
 				4C217E001D9784A800DE7DB5 /* main.swift in Sources */,
 				4C7207EC1D978B5800E1B8A7 /* BinarySearchTree.swift in Sources */,
