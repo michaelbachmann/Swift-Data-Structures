@@ -13,9 +13,14 @@ print("Hello, World!")
 var bst = BinarySearchTree<Int>()
 var injectArray = [5, 6, 7, 4, 1, 10]
 
+var charSeq =  Array("abc".characters)
 
-for num in injectArray {
-  bst.insert(key: num)
-}
+permute(aString: &charSeq, size: 3)
 
-bst.printTree()
+//
+//
+//for num in injectArray {
+//  bst.insert(key: num)
+//}
+//
+//bst.printTree()
