@@ -36,8 +36,24 @@ public struct Stack<T> {
 
 // MARK: Sequence Protocol Conformance
 extension Stack : Sequence {
-  // To Fix
   public func makeIterator() -> AnyIterator<T> {
-    return AnyIterator(IndexingIterator(_elements: data))
+      return AnyIterator(data.reversed().makeIterator())
+    }
+}
+
+// MARK: CustomStringConvertible Protocol Conformance
+extension Stack : CustomStringConvertible {
+  public var description : String {
+    return "[" + map{"\($0)"}.joined(separator: ", ") + "]"
+  }
+}
+
+// MARK: ArrayLiteralConvertible Protocol Conformance
+extension Stack : ExpressibleByArrayLiteral {
+  public init(arrayLiteral: T...) {
+    self.init()
+    for element in arrayLiteral {
+      self.data.append(element)
+    }
   }
 }

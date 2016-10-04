@@ -15,7 +15,17 @@ var injectArray = [5, 6, 7, 4, 1, 10]
 
 var charSeq =  Array("abc".characters)
 
-permute(aString: &charSeq, size: 3)
+//permute(aString: &charSeq, size: 3)
+
+var paper_stack: Stack<Int> = [1,2,3,4,5,6]
+print(paper_stack)
+print(paper_stack.pop()!)
+print(paper_stack.count)
+print(paper_stack)
+for index in 1...5 {
+  paper_stack.pop()
+}
+print(paper_stack)
 
 //
 //
