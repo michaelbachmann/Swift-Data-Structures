@@ -44,7 +44,7 @@ extension Stack : Sequence {
 // MARK: CustomStringConvertible Protocol Conformance
 extension Stack : CustomStringConvertible {
   public var description : String {
-    return "[" + map{"\($0)"}.joined(separator: ", ") + "]"
+    return "[" + map{"\($0)"}.joined(separator: " -> ") + "]"
   }
 }
 

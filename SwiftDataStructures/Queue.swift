@@ -8,6 +8,7 @@
 
 import Foundation
 
+// MARK: Class Definitions
 private final class QueueNode<T> {
   var _value: T
   var _next: QueueNode<T>? = nil
@@ -24,6 +25,7 @@ public final class Queue<T> {
   public init () { }
 }
 
+// MARK: Member Functions
 extension Queue {
   public func append(newElement: T) {
     let oldTail = _tail
@@ -57,5 +59,29 @@ extension Queue {
   
   public func front() -> T? {
       return _head?._value
+  }
+}
+
+// MARK: Sequence Protocol Conformance
+//extension Queue : Sequence {
+//  public func makeIterator() -> AnyIterator<T> {
+//    return AnyIterator(data.reversed().makeIterator())
+//  }
+//}
+
+// MARK: CustomStringConvertible Protocol Conformance
+//extension Queue : CustomStringConvertible {
+//  public var description : String {
+//    return "[" + map{"\($0)"}.joined(separator: " -> ") + "]"
+//  }
+//}
+
+// MARK: ArrayLiteralConvertible Protocol Conformance
+extension Queue : ExpressibleByArrayLiteral {
+  public convenience init(arrayLiteral: T...) {
+    self.init()
+    for element in arrayLiteral {
+      self.append(newElement: element)
+    }
   }
 }
