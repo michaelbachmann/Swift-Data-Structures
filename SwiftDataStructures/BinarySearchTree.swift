@@ -1,10 +1,5 @@
-//
-//  BinarySearchTree.swift
-//  SwiftDataStructures
-//
-//  Created by John Michael Bachmann on 9/24/16.
-//  Copyright © 2016 Michael Bachmann. All rights reserved.
-//
+// TODO
+// Make moer swifty
 
 import Foundation
 
